@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éditeur en Temps Réel avec Coloration Syntaxique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <h1>Éditeur HTML, CSS et JS avec Prévisualisation</h1>
+    <div class="container">
+        <div class="editor-container">
+            <div class="editor">
+                <h2><i class="fa-brands fa-html5"></i>HTML</h2>
+                <div id="htmlEditor" class="code-editor"></div>
+            </div>
+            <div class="editor">
+                <h2><i class="fa-brands fa-css3-alt"></i>CSS</h2>
+                <div id="cssEditor" class="code-editor"></div>
+            </div>
+            <div class="editor">
+                <h2><i class="fa-brands fa-js"></i>JavaScriptJavaScript</h2>
+                <div id="jsEditor" class="code-editor"></div>
+            </div>
+        </div>
+        <div class="result">
+            <h2>Résultat</h2>
+            <iframe id="resultFrame"></iframe>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
